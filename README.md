@@ -2,7 +2,7 @@
 Containerizing application  
 
 
-Phase 1: Application Containerization
+Phase 1: Application Containerization - Birthday-Reminder-APP
 
 Choose Your Application:
 
