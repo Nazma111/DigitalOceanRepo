@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: birthday-reminder-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: birthday-reminder
+  template:
+    metadata:
+      labels:
+        app: birthday-reminder
+    spec:
+      containers:
+        - name: birthday-reminder
+          image: myfirst-registry/birthday-reminder-app:latest
+          ports:
+            - containerPort: 5000
