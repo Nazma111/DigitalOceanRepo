@@ -80,10 +80,14 @@ Once your cluster is created, DigitalOcean will provide instructions on how to d
 
  Follow these instructions:
  1.download a YAML file and then use the doctl command-line tool (DigitalOcean's CLI) to set your kubectl context.
+
 2.Verify your kubectl configuration:
    kubectl get nodes
+
 3.Create Kubernetes Deployment and Service YAML Files
+
 4.Access Your Application , then add Loadbalancer and AutoScale application.
+
 5.Horizontal Pod Autoscaling : last step to moniter the no of pods created to scale the application.
 
 
