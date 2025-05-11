@@ -66,12 +66,25 @@ phase 5:Build the Docker Image
 
 
 
+
 Step 7: In Digital ocean Dashboard Deploying to DigitalOcean Kubernetes (DOKS)
 
 Create a DOKS Cluster:
 
 In your DigitalOcean control panel, navigate to "Kubernetes" and create a new cluster.
-Choose a region, Kubernetes version, and the number and size of your nodes. For this assignment, a small cluster with 2-3 nodes should suffice.
+Choose a region, Kubernetes version, and the number and size of your nodes.
+For this assignment, a small cluster with 2-3 nodes should sufficent.
 Configure kubectl to Access Your Cluster:
 
-Once your cluster is created, DigitalOcean will provide instructions on how to download your cluster's configuration file (kubeconfig). Follow these instructions.
+Once your cluster is created, DigitalOcean will provide instructions on how to download your cluster's configuration file (kubeconfig).
+
+ Follow these instructions:
+ 1.download a YAML file and then use the doctl command-line tool (DigitalOcean's CLI) to set your kubectl context.
+2.Verify your kubectl configuration:
+   kubectl get nodes
+3.Create Kubernetes Deployment and Service YAML Files
+4.Access Your Application , then add Loadbalancer and AutoScale application.
+5.Horizontal Pod Autoscaling : last step to moniter the no of pods created to scale the application.
+
+
+Thank you 
