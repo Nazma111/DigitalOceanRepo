@@ -4,7 +4,7 @@ Containerizing application
 
 Phase 1: Application Containerization - Birthday-Reminder-APP
 
-Choose Your Application:
+Choose Birthday-Reminder-APP Application:
 
 You can either use the provided birthday reminder template (Node.js) or a simple application you're familiar with (Python/Flask, static HTML). For simplicity in this guide, let's assume you'll use the Node.js birthday reminder template.
    
@@ -20,12 +20,12 @@ Go to the provided GitHub link: https://www.digitalocean.com/community/tutorials
 
 
 
-Phase 3: understand the Application:
+Phase 3:Application Details for reference
 
 Take a moment to look at the application files (app.js, package.json, etc.) to understand its basic functionality.
 
 
-phase 4: Create a Dockerfile:
+phase 4: Next step is to Create a Dockerfile
 
 In the root directory of your application, create a file named Dockerfile
 
@@ -35,11 +35,9 @@ In the root directory of your application, create a file named Dockerfile
 
 
 
-phase 5:Build the Docker Image:
+phase 5:Build the Docker Image 
 
-Open your terminal, navigate to the directory containing the Dockerfile
-
-
+ directory containing the Dockerfile
 
 
 
@@ -66,7 +64,9 @@ Open your terminal, navigate to the directory containing the Dockerfile
 
 
 
-Deploying to DigitalOcean Kubernetes (DOKS)
+
+
+Step 7: In Digital ocean Dashboard Deploying to DigitalOcean Kubernetes (DOKS)
 
 Create a DOKS Cluster:
 
