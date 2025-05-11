@@ -10,9 +10,14 @@ You can either use the provided birthday reminder template (Node.js) or a simple
    
    
    
+
+
 phase 2 :Download or Clone the Template:
 
 Go to the provided GitHub link: https://www.digitalocean.com/community/tutorials/automating-birthday-reminders-with-triggers
+
+
+
 
 
 Phase 3: understand the Application:
@@ -26,9 +31,38 @@ In the root directory of your application, create a file named Dockerfile
 
 
 
+
+
+
+
 phase 5:Build the Docker Image:
 
 Open your terminal, navigate to the directory containing the Dockerfile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
