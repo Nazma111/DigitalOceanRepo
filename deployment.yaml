@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: birthday-reminder-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: birthday-reminder
@@ -14,7 +14,24 @@ spec:
     spec:
       containers:
         - name: birthday-reminder
-          image: registry.digitalocean.com/digitalocean-images-repo/birthday-reminder-app:latest
+          image: nazma111/image-bday-app
           ports:
             - containerPort: 5000
-
+          resources:
+            requests:
+              cpu: "100m"
+            limits:
+              cpu: "250m"
+---
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: birthday-reminder-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: birthday-reminder-deployment
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 50
