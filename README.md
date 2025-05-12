@@ -93,3 +93,8 @@ Once your cluster is created, DigitalOcean will provide instructions on how to d
 
 
 Thank you 
+
+
+
+![image](https://github.com/user-attachments/assets/bba164b3-5ae3-4e53-9d91-6b6c85d338f6)
+
